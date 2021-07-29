@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:black;
+    margin-bottom:100px;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.about-section{
+    color:white;
+}
+
+.about-section-header{
+    margin-left:100px;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.about-section-body{
+    margin-right:120px;
+    margin-left:120px;
+    font-size:20px;
+}
+
+#summary-body p{
+    text-indent:20px;
+    margin:5px;
+}
+
+.pro-exp-job{
+    margin-bottom:15px;
+}
+
+.school-entry{
+    margin-bottom:15px;
+}
+
+.award-entry{
+    margin-bottom:15px;
+}
+
+.skill-entry{
+    margin-bottom:15px;
+}

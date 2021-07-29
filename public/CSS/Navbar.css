@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    border-radius:0px 0px 10px 10px;
+    background-color:#ffa600;
+    display:flex;
+}
+
+#navbar-my-name{
+    font-size:50px;
+    color:red;
+    padding-left:20px;
+    width:25%;
+    height:100%;
+}
+
+#navbar-buttons{
+    display:flex;
+    width:50%;
+    height:auto;
+    justify-content:flex-start;
+}
+
+li{
+    list-style-type:none;
+    margin:auto;
+}
+
+a{
+    text-decoration:none;
+    border-style:solid;
+    background-color:lightgrey;
+    padding:10px 10px 10px 10px;
+    border-radius:5px;
+}
+
+a:link,
+a:visited{
+    color:brown;
+}
+
+a:hover{
+    color:black;
+}
+
+a:active{
+    color:darkgreen;
+}
