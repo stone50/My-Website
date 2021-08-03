@@ -4,16 +4,14 @@
 }
 
 body{
-    background-color:black;
+    background-color:#c7c6c5;
     margin-bottom:100px;
+    font-family: "Rubik", sans-serif;
+    color:black;
 }
 
 ul{
     list-style-type:none;
-}
-
-.about-section{
-    color:white;
 }
 
 .about-section-header{

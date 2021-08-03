@@ -23,23 +23,20 @@ let projects = document.getElementsByClassName("project-title");
 for(let i = 0; i < projects.length; i++){
     projects.item(i).addEventListener('mouseover', onMouseHoverProject);
     projects.item(i).addEventListener('mouseleave', onMouseLeaveProject);
-    projects.item(i).addEventListener('mousedown', onMouseDownProject);
     projects.item(i).addEventListener('mouseup', onMouseUpProject);
 }
 
 function onMouseHoverProject(e) {
-    e.target.style.color = "black";
+    e.target.style.backgroundColor = "#808080";
 }
 
 function onMouseLeaveProject(e) {
-    e.target.style.color = "brown";
-}
-
-function onMouseDownProject(e){
-    e.target.style.color = "green";
+    e.target.style.backgroundColor = "white";
 }
 
 function onMouseUpProject(e){
+    let target = e.target;
+    target.parentElement.hidden = true;
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
@@ -47,7 +44,7 @@ function onMouseUpProject(e){
             switch (this.status){
                 case 200:
                     projectHtml = this.responseText;
-                    document.getElementById("project-css").setAttribute("href", `CSS/Projects/${e.target.getAttribute("data-css")}`);
+                    document.getElementById("project-css").setAttribute("href", `CSS/Projects/${target.getAttribute("data-css")}`);
                     break;
 
                 case 404:
@@ -58,6 +55,6 @@ function onMouseUpProject(e){
             document.getElementById("project-body").innerHTML = projectHtml;
         }
     }
-    xhttp.open("GET", `../HTML/Projects/${e.target.getAttribute("data-html")}`);
+    xhttp.open("GET", `../HTML/Projects/${target.getAttribute("data-html")}`);
     xhttp.send();
 }

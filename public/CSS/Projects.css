@@ -4,43 +4,56 @@
 }
 
 body{
-    background-color:black;
-    color:white;
+    background-color:#c7c6c5;
+    color:black;
+    font-family: "Rubik", sans-serif;
 }
 
 #category-selector{
-    margin-right:50%;
-    margin-left:50%;
+    position:absolute;
+    width:100vw;
 }
 
 #category-list{
     display:flex;
     justify-content:center;
+    text-align: center;
+    list-style-type:none;
 }
 
 .category{
     margin-top:10px;
     vertical-align:top;
-    background-color:lightgrey;
     border-radius:5px;
-    border-style:solid;
-    color:brown;
+    border-style: solid;
+    border-color:white;
     margin-right:10px;
     margin-left:10px;
     white-space:nowrap;
+    width:100%;
+    height:min-content;
 }
 
 .category-header{
-    color:brown;
     padding:10px;
-    border-bottom:solid;
     text-align:center;
+    background-color: white;
+}
+
+.project-list{
+    list-style-type:none;
 }
 
 .project-title{
     text-align:center;
-    color:brown;
+    color:black;
     border-top:solid;
-    border-bottom:solid;
     padding:10px;
+    background-color: white;
+}
+
+#project-body{
+    width:50%;
+    margin:auto;
+    margin-top: 100px;
 }
