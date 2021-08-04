@@ -8,3 +8,26 @@ body{
     font-family: "Rubik", sans-serif;
     color: black;
 }
+
+#playing-chess-image{
+    width:100%;
+}
+
+#welcome-message{
+    color:white;
+    background-color:black;
+    position:absolute;
+    right:0px;
+    border-style:solid;
+    border-color:black;
+    border-bottom-left-radius: 5px;
+}
+
+#welcome-text{
+    text-align: center;
+    font-size:300%;
+}
+
+#welcome-text p{
+    margin:20px;
+}
