@@ -34,19 +34,17 @@
 
 .navbar-button a{
     text-decoration:none;
-    background-color:#c7c6c5;
     padding:10px 10px 10px 10px;
     border-radius:5px;
+    color:black;
 }
 
 .navbar-button a:link,
 .navbar-button a:visited{
-    color:black;
     background-color:#c7c6c5;
 }
 
 .navbar-button a:hover,
 .navbar-button a:active{
-    color:black;
     background-color: #808080;
 }

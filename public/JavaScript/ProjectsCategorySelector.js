@@ -45,6 +45,7 @@ function onMouseUpProject(e){
                 case 200:
                     projectHtml = this.responseText;
                     document.getElementById("project-css").setAttribute("href", `CSS/Projects/${target.getAttribute("data-css")}`);
+                    document.getElementById("back-to-top-button").hidden = true;
                     break;
 
                 case 404:

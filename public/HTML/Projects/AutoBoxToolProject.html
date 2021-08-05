@@ -1,3 +1,44 @@
-<h3>
-    This page is about my Auto Box Collider Tool project
-</h3>
+<div id="project-header">
+    <h3>Auto Box Collider Tool</h3>
+</div>
+<div id="project-files">
+    <a id="project-files-link" href="https://github.com/stone50/Unity-Auto-Box-Collider-Tool" target="_blank">Project Files</a>
+</div>
+<div id="project-summary">
+    <h2 id="project-summary-header">Summary</h2>
+    <p id="project-summary-body">
+        The Auto Box Collider Tool is a Unity editor tool used to assist in the game development process. With a simple click of a button, a box collider will be automatically generated around the selected object.
+    </p>
+    <video id="project-demo-video" controls>
+        <source src="../../Resources/AutoBoxColliderDemo.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="scroll-text">
+    Scroll down for more details
+</div>
+<div id="project-details" hidden>
+    <p>
+        When I began working with the Unity game engine, I almost immediately came across a few roadblocks.
+        One of them being that I found it difficult to create a collider for an object that is not a simple cube or cylinder.
+        This is what sparked the idea for this project: a tool that could create a simple box collider around any 3d model.
+    </p>
+    <p>
+        This tool adds a button labeled "auto" at the bottom of the box collider inspector.
+        All that is needed to use this tool is to select a single object, add a box collider component (if the object does not already have one you'd like to use), and click the "auto" button.
+    </p>
+    <img id="box-collider-inspector-without-tool" src="../../Resources/BoxColliderInspectorWithoutTool.PNG" alt="Box Collider Inspector Without Tool">
+    <img id="box-collider-inspector-with-tool" src="../../Resources/BoxColliderInspectorWithTool.PNG" alt="Box Collider Inspector With Tool">
+    <p>
+        The Auto Box Collider Tool works by first temporarily undoing all rotations done to the object.
+        This will make it so that it can do calculations on the main x, y, and z axes.
+        Then, it finds the farthest points away from the center of the object in each of the 6 directions: positive x, negative x, positive y, negative y, positive z, and negative z.
+        It uses those points to calculate the center and size of the box collider.
+        Finally, it returns the object to its original rotation.
+        Below is shown a 2d representation of these steps.
+    </p>
+    <img id="auto-box-2d-step0" src="../../Resources/AutoBox2dStep0.png" alt="Auto Box 2d Step 0">
+    <img id="auto-box-2d-step1" src="../../Resources/AutoBox2dStep1.png" alt="Auto Box 2d Step 1">
+    <img id="auto-box-2d-step2" src="../../Resources/AutoBox2dStep2.png" alt="Auto Box 2d Step 2">
+    <img id="auto-box-2d-step3" src="../../Resources/AutoBox2dStep3.png" alt="Auto Box 2d Step 3">
+    <img id="auto-box-2d-step4" src="../../Resources/AutoBox2dStep4.png" alt="Auto Box 2d Step 4">
+</div>
