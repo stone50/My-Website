@@ -10,6 +10,31 @@ body{
     color:black;
 }
 
+img{
+    border-radius: 5px;
+}
+
+#about-header-images{
+    margin-top:10px;
+    width:100%;
+    height:300px;
+    display:flex;
+    justify-content: center;
+}
+
+.about-header-image{
+    height:100%;
+    border-style:solid;
+    border-color:white;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.about-header-image:hover{
+    height:150%;
+    z-index: 1;
+}
+
 #about-sections{
     display:flex;
     flex-direction: column;
@@ -27,10 +52,10 @@ body{
 }
 
 .about-section-body{
-    margin-right:120px;
-    margin-left:120px;
     font-size:20px;
-    margin-left:50%;
+    position:relative;
+    left:50%;
+    width:25%;
 }
 
 #summary-body p{
@@ -38,18 +63,11 @@ body{
     margin:5px;
 }
 
-.pro-exp-job{
+.about-section-entry{
     margin-bottom:15px;
 }
 
-.school-entry{
-    margin-bottom:15px;
-}
-
-.award-entry{
-    margin-bottom:15px;
-}
-
-.skill-entry{
-    margin-bottom:15px;
+.about-section-image{
+    position:absolute;
+    right:55%;
 }

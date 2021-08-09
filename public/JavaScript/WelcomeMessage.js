@@ -11,7 +11,4 @@ function onWindowResize(){
     messageText.style.fontSize = String(messageBox.clientHeight * 0.15) + "px";
     messageText.style.marginTop = String((messageBox.clientHeight - messageText.clientHeight) / 2) + "px";
     messageText.style.marginBottom = String((messageBox.clientHeight - messageText.clientHeight) / 2) + "px";
-
-    console.log(messageText.style.marginTop);
-    console.log(messageText.style.marginBottom);
 }
