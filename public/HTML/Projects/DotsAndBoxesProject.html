@@ -1,3 +1,54 @@
-<h3>
-    This page is about my Dots and Boxes project
-</h3>
+<div id="project-header">
+    <h3>Dots and Boxes</h3>
+</div>
+<div id="project-files">
+    <a id="project-files-link" href="https://github.com/stone50/Dots-and-Boxes" target="_blank">Project Files</a>
+</div>
+<div id="project-summary">
+    <h2 id="project-summary-header">Summary</h2>
+    <p id="project-summary-body">
+        This is the game of Dots and Boxes.
+        Two players take turns clicking and dragging to create lines between dots.
+        The player that completes the last side of a box earns a point and an extra turn.
+        When the grid is filled up, the player with the most boxes wins.
+    </p>
+    <video id="project-demo-video" controls>
+        <source src="../../Resources/Projects/DotsAndBoxesProject/DotsAndBoxesDemo.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="scroll-text">
+    Scroll down for more details
+</div>
+<div id="project-details" hidden>
+    <p>
+        Note: This project uses my Polygon project for dot locations and collision detection.
+        For more information, check out my Polygon project under the "Useful Tools" category.
+    </p>
+    <p>
+        This game is quite simple, but many cases need to be accounted for.
+        For example, a line cannot be drawn on top of another line, after completing a box, that player takes another turn, or a box can only be counted towards one player.
+        Given that such cases can be dealt with with a few if statements, there are still some major game mechanics that require some explanation.
+        These mechanics include: lines can only be drawn between orthogonally adjacent dots, and when a new line completes a box, the box should be colored in.
+    </p>
+    <p>
+        Let's tackle the first mechanic: lines can only be drawn between orthogonally adjacent dots.
+        To be orthogonally adjacent means to be directly above, below, to the right, or the left of something.
+        In other words, two dots must be directly next to each other, excluding diagonally, for a line to be drawn between them.
+        My first instinct when tackling this problem was to take an array of dots and use the dots' indices to determine whether or not two dots are orthogonally adjacent.
+        However, we can cleverly use the physical distance between the dots to determine this.
+        A dot has to be within a certain distance of another dot for them to be orthogonally adjacent.
+    </p>
+    <img id="dots-and-boxes-distance" src="../../Resources/Projects/DotsAndBoxesProject/DotsAndBoxesDistance.png" alt="Dots and Boxes Distance">
+    <p>
+        The next mechanic to cover is how to detect when a newly created line completes a box.
+        For this to be done, we need to keep a record of all lines previously created.
+        A newly created line can only complete a box in two possible locations depending on whether the line is horizontal or vertical.
+    </p>
+    <img id="dots-and-boxes-horizontal-line" src="../../Resources/Projects/DotsAndBoxesProject/DotsAndBoxesHorizontalLine.png" alt="Dots and Boxes Horizontal Line">
+    <img id="dots-and-boxes-vertical-line" src="../../Resources/Projects/DotsAndBoxesProject/DotsAndBoxesVerticalLine.png" alt="Dots and Boxes Vertical Line">
+    <p>
+        To determine if a line is horizontal, we can check if the difference between the indicies of the connected dots is 1.
+        Once we know if the line is horizontal or vertical, we can check the two possible box locations to see if all sides of the box are present.
+        If so, we can color in that box and award a point to the player that created the last line.
+    </p>
+</div>

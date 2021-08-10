@@ -66,55 +66,41 @@
 #box-collider-inspector-with-tool{
     float:right;
     width:50%;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px 0px;
 }
 
 #box-collider-inspector-without-tool{
     float:left;
     width:50%;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px 0px;
 }
 
 #auto-box-2d-step0{
     float:left;
-    width:45%;
-    border-style:solid;
-    border-color:black;
+    width:49%;
     margin-bottom:20px;
 }
 
 #auto-box-2d-step1{
     float:right;
-    width:45%;
-    border-style:solid;
-    border-color:black;
+    width:49%;
     margin-bottom:20px;
 }
 
 #auto-box-2d-step2{
-    float:left;
     width:45%;
-    border-style:solid;
-    border-color:black;
-    margin-bottom:20px;
+    display: table;
+    margin: 0px auto 20px auto;
 }
 
 #auto-box-2d-step3{
-    float:right;
     width:45%;
-    border-style:solid;
-    border-color:black;
-    margin-bottom:20px;
+    display: table;
+    margin: 0px auto 20px auto;
 }
 
 #auto-box-2d-step4{
     width:45%;
     display: table;
-    margin: 0 auto;
-    text-align: center;
-    border-style:solid;
-    border-color:black;
-    margin-bottom:20px;
+    margin: 0px auto 20px auto;
 }
